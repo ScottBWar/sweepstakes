@@ -7,5 +7,5 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 12.times do |t|
-Contestant.create({firstname: Faker::Name.first_name, lastname:Faker::Name.last_name, email:Faker::Internet.email, birthday:Faker::Time.backward(4000), zipcode:Faker::Address.zip, provider:Faker::Company.name})
+Contestant.create({firstname: Faker::Name.first_name, lastname:Faker::Name.last_name, email:Faker::Internet.email, birthday:Faker::Date.backward(9000), zipcode:Faker::Address.zip, provider:Faker::Company.name})
 end

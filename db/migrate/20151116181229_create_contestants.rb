@@ -4,7 +4,7 @@ class CreateContestants < ActiveRecord::Migration
     	t.string :firstname, null: false
     	t.string :lastname, null: false
     	t.string :email, null: false
-    	t.string :birthday, null: false
+    	t.date :birthday, null: false
     	t.string :zipcode, null: false
     	t.string :provider, null: false
 

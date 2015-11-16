@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20151116181229) do
     t.string   "firstname",  limit: 255, null: false
     t.string   "lastname",   limit: 255, null: false
     t.string   "email",      limit: 255, null: false
-    t.string   "birthday",   limit: 255, null: false
+    t.date     "birthday",               null: false
     t.string   "zipcode",    limit: 255, null: false
     t.string   "provider",   limit: 255, null: false
     t.datetime "created_at",             null: false
