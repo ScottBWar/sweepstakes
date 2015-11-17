@@ -6,3 +6,13 @@ $main-color: rgb(112, 196 ,242);
 body{
 	background-color: $main-color
 }
+
+.maincontent{
+	border: 1px solid black;
+
+	img{
+		width:100%;
+
+	}
+}
+
