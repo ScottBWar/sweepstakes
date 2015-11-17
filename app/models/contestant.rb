@@ -10,4 +10,6 @@ class Contestant < ActiveRecord::Base
 
   validates :email, :uniqueness => true
 
+  validates :zipcode, zipcode: { country_code: :us }
+
 end

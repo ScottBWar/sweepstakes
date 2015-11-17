@@ -1,4 +1,26 @@
 <%= form_for(@contestant) do |f| %>
+
+    <%= f.label :firstname %>
+    <%= f.text_field :firstname %>
+
+     <%= f.label :lastname %>
+    <%= f.text_field :lastname %>
+
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+
+    <%= f.label :birthday %>
+    <%= f.text_field :birthday %>
+
+     <%= f.label :zipcode %>
+    <%= f.text_field :zipcode %>
+
+     <%= f.label :provider %>
+    <%= f.text_field :provider %>
+
+
+
+
   <% if @contestant.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@contestant.errors.count, "error") %> prohibited this contestant from being saved:</h2>

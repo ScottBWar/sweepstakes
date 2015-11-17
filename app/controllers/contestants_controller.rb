@@ -69,6 +69,6 @@ class ContestantsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def contestant_params
-      params[:contestant]
+      params[:contestant].permit(:firstname, :lastname, :email, :birthday, :zipcode, :provider)
     end
 end
