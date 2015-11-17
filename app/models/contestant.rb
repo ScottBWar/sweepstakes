@@ -11,14 +11,16 @@ class Contestant < ActiveRecord::Base
 
   validates :email, :uniqueness => true
 
-  validates :zipcode, zipcode: { country_code: :us }
+  # validates :zipcode, zipcode: true
+  # validates :zipcode, zipcode: { country_code: :us }
+
 
   def birthday=(datevalue)
-    d = Date.strptime(datevalue,"%d/%m/%y")
+    d = Chronic::parse(datevalue)
     if d > Date.today
       d = Date.new(d.year - 100, d.month, d.mday)
     end
-    write_attribute(:birthday, Chronic::parse(d, :context => :past) )
+    write_attribute(:birthday, d)
   end
 
 end
