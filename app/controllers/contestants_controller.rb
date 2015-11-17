@@ -1,6 +1,7 @@
 class ContestantsController < ApplicationController
   before_action :set_contestant, only: [:show, :edit, :update, :destroy]
 
+
   # GET /contestants
   # GET /contestants.json
   def index
