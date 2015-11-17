@@ -1,13 +1,21 @@
 // Place all the styles related to the contestants controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: 
-$main-color: rgb(112, 196 ,242);
+$bg-color: rgb(112, 196 ,242);
+$dark-blue: #3399cc;
+$stripes:  repeating-linear-gradient(-45deg,
+      transparent, 
+      transparent 9px, 
+      rgba(0, 0, 0, 0.1) 0.1px, 
+      rgba(0, 0, 0, 0.1) 10px);
 
 body{
-	background-color: $main-color
+	background-color: $bg-color;
 }
 
 .maincontent{
+background:$stripes;
+	background-color: $dark-blue;
 	border: 1px solid black;
 
 	img{
