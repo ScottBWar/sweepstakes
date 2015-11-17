@@ -24,4 +24,4 @@ en:
 
 errors:
   messages:
-    invalid_zipcode: INVALID ZIPCODE
+    invalid_zipcode: Your zipcode error message.

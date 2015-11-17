@@ -11,8 +11,7 @@ class Contestant < ActiveRecord::Base
 
   validates :email, :uniqueness => true
 
-  # validates :zipcode, zipcode: true
-  # validates :zipcode, zipcode: { country_code: :us }
+  validates :zipcode, zipcode: { country_code: :us }
 
 
   def birthday=(datevalue)
