@@ -114,8 +114,7 @@ background:$stripes;
 
 			.submitform{
 				padding:2vw;
-				background:$stripes;
-			
+				
 
 				.label{
 				font-size:1.9vw;
@@ -128,9 +127,16 @@ background:$stripes;
 				}
 
 				.formcontainer{
+					background:$stripes;
+			
 					margin:0 auto;
-					width:90%;
+					width:100%;
 				}
+			}
+
+			.checkfield{
+				margin-top:2%;
+				margin-left:5%;
 			}
 
 			

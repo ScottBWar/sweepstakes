@@ -21,12 +21,13 @@
     <%= f.text_field :zipcode, class:"text-field form-control inner-shadow input-lg" %>
 <div class="form-group">
      <%= f.label :provider,"CABLE PROVIDER", class:"label" %>
-    <%= f.select(:provider, options_for_select([ ['Cablevision', "cablevision"], ['Time Warner', "time warner"],["Other", "other"]] ), {:include_blank => true}, {:class => 'text-field form-control inner-shadow input-lg'},) %>
+    <%= f.select(:provider, options_for_select([ ['Cablevision', "cablevision"], ['Time Warner', "time warner"],["Other", "other"]] ), {:include_blank => true}, {:class => 'btn btn-large text-field form-control inner-shadow input-lg '})  %>
     </div>
 </div>
 
 </div>
-
+</div>
+<div class="checkfield"><input type="checkbox">Yes I would like to subscribe</div>
   <% if @contestant.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@contestant.errors.count, "error") %> prohibited this contestant from being saved:</h2>
@@ -43,5 +44,6 @@
     <%= f.submit %>
   </div>
 <% end %>
+
 </div>
-</div>
+
