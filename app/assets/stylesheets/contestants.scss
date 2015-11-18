@@ -59,8 +59,23 @@ background:$stripes;
 				}
 			}
 
+			.moreinfo{
+				font-size:1.5vw;
+				color:$dark-blue;
+				text-align: center;
+				font-weight: bold;
+				width:80%;
+				margin:0 auto;
+
+					a{
+						color:black;
+						text-decoration:underline;
+					}
+			}
+
 			ul{
 				list-style-type: none;
+				margin-bottom:8%;
 				li{
 					font-size:2vw;
 					margin-bottom:5%;
