@@ -48,6 +48,7 @@ background:$stripes;
 				padding-top:1%;
 				padding-bottom:1%;
 				color:white;
+				margin-bottom:5%;
 				
 			}
 
@@ -65,10 +66,10 @@ background:$stripes;
 					margin-bottom:5%;
 
 					.glyphicon{
-						margin-right:10%;
-						margin-top:3vw;
+						margin-right:5%;
 						font-size:4rem;
-						color: $light-blue;
+						color: $dark-blue;
+						vertical-align:middle;
 					}
 
 				}
