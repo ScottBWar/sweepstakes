@@ -9,6 +9,12 @@ $stripes:  repeating-linear-gradient(-45deg,
       rgba(0, 0, 0, 0.1) 0px, 
       rgba(0, 0, 0, 0.1) 10px);
 
+.inner-shadow {
+   -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+}
+
 body{
 	background-color: $light-blue;
 }
@@ -107,15 +113,23 @@ background:$stripes;
 			}
 
 			.submitform{
-				border: 1px solid black;
+				padding:2vw;
+				background:$stripes;
+			
 
 				.label{
-				font-size:2vw;
+				font-size:1.9vw;
 				color:black;
 				}
 
 				.text-field{
+					margin-bottom:2vw;
 					display:block;
+				}
+
+				.formcontainer{
+					margin:0 auto;
+					width:90%;
 				}
 			}
 
