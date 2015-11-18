@@ -4,6 +4,8 @@ class Contestant < ActiveRecord::Base
 
 
   validates :firstname, :presence => true, :length => {:maximum => 30}
+  validates_format_of :firstname, :with => /[a-z ,.'-]+/i
+  validates_format_of :lastname, :with => /[a-z ,.'-]+/i
 
   validates :lastname, :presence => true, :length => {:maximum => 30}
 
