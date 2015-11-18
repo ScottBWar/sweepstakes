@@ -31,7 +31,7 @@ background:$stripes;
 		font-family: 'Open Sans';
 
 			p{
-				font-size:2rem;
+				font-size:2vw;
 				margin-top:3%;
 				margin-left:3%;
 				margin-right:3%;
@@ -42,17 +42,39 @@ background:$stripes;
 				font-family: 'Open Sans';
 				width:100%;
 				background-color:$light-blue;
-				font-size:4rem;
+				font-size:3vw;
 				padding-right:5%;
 				padding-left:5%;
 				padding-top:1%;
 				padding-bottom:1%;
 				color:white;
+				
 			}
 
-			.glyphicon{
-				color: $light-blue;
+			.perkslist{
+				margin: 2%;
+
+				.perk{
+				}
 			}
+
+			ul{
+				list-style-type: none;
+				li{
+					font-size:2vw;
+					margin-bottom:5%;
+
+					.glyphicon{
+						margin-right:10%;
+						margin-top:3vw;
+						font-size:4rem;
+						color: $light-blue;
+					}
+
+				}
+			}
+
+			
 	}
 }
 
