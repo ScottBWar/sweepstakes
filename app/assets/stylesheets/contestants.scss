@@ -16,13 +16,14 @@ $stripes:  repeating-linear-gradient(-45deg,
 }
 
 body{
+	padding-bottom:15vw;
 	background-color: $light-blue;
 }
 
 .maincontent{
 background:$stripes;
 	background-color: $dark-blue;
-	border: 1px solid black;
+	border: 1px solid $dark-blue;
 
 	img{
 		width:100%;
@@ -30,6 +31,7 @@ background:$stripes;
 	}
 
 	.textcontent{
+		margin-bottom:2vw;
 		padding:0.5%;
 		width:90%;
 		background-color:white;
@@ -125,7 +127,7 @@ background:$stripes;
 
 				.label{
 				font-size:1.9vw;
-				color:black;
+				color:#7f8c8d;
 				}
 
 				.text-field{
@@ -143,7 +145,7 @@ background:$stripes;
 
 			.checkfield{
 				margin-top:2%;
-				margin-left:1%;
+				margin-left:3%;
 			}
 
 			#privacypolicy{
@@ -151,11 +153,33 @@ background:$stripes;
 				font-weight:bold;
 				color:$light-blue;
 				display:block;
+				margin-bottom:3%;
+			}
+
+			.submitter{
+				box-shadow: 0 0 1em #7f8c8d;
+				margin-left:3%;
+				margin-bottom:3%;
+				width:40%;
+				font-size:2vw;
+				background-color:$dark-blue;
 			}
 
 			
 	}
 }
 
+.conditions{
+	width:60%;
+	margin:0 auto;
+	text-align:center;
+	font-family:"Open Sans";
+	color:white;
+	font-size:1.2vw;
+}
+
+.back{
+	color:$light-blue;
+}
 
 
