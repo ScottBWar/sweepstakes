@@ -1,21 +1,22 @@
+<div class="submitform">
 <%= form_for(@contestant) do |f| %>
 
-    <%= f.label :firstname %>
+    <%= f.label :firstname, class:"label" %>
     <%= f.text_field :firstname %>
 
-     <%= f.label :lastname %>
+     <%= f.label :lastname, class:"label" %>
     <%= f.text_field :lastname %>
 
-    <%= f.label :email %>
+    <%= f.label :email, class:"label" %>
     <%= f.text_field :email %>
 
-    <%= f.label :birthday %>
+    <%= f.label :birthday, class:"label" %>
     <%= f.text_field :birthday %>
 
-     <%= f.label :zipcode %>
+     <%= f.label :zipcode, class:"label" %>
     <%= f.text_field :zipcode %>
 
-     <%= f.label :provider %>
+     <%= f.label :provider, class:"label" %>
     <%= f.text_field :provider %>
 
 
@@ -37,3 +38,4 @@
     <%= f.submit %>
   </div>
 <% end %>
+</div>
