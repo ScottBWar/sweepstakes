@@ -16,7 +16,7 @@
 </div>
 <div class="col-xs-6 col-sm-6 col-md-6">
     <%= f.label :birthday, "DATE OF BIRTH", class:"label" %>
-    <%= f.text_field :birthday, class:"text-field form-control inner-shadow input-lg" %>
+    <%= f.text_field :birthday, :value => "MM/DD/YY", class:"text-field form-control inner-shadow input-lg" %>
 
      <%= f.label :zipcode, "ZIP CODE", class:"label" %>
     <%= f.text_field :zipcode, class:"text-field form-control inner-shadow input-lg" %>
