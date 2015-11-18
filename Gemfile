@@ -30,6 +30,8 @@ gem 'validates_zipcode'
 
 gem 'bootstrap_form'
 
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -38,6 +40,9 @@ gem 'bootstrap_form'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+group :production do
+  gem 'pg'
+end
 
 group :development, :test do
 
