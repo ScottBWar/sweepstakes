@@ -1,4 +1,5 @@
 <div class="submitform">
+<div id= "stripes">
 <div class="formcontainer ">
 <div class="row">
 <%= form_for(@contestant) do |f| %>
@@ -27,7 +28,11 @@
 
 </div>
 </div>
-<div class="checkfield"><input type="checkbox">Yes I would like to subscribe</div>
+</div>
+<div class="checkfield"><input type="checkbox">
+<span>Yes, I would like to receive news and special offers from the resort!</span>
+<span id="privacypolicy">PRIVACY POLICY</span>
+</div>
   <% if @contestant.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@contestant.errors.count, "error") %> prohibited this contestant from being saved:</h2>

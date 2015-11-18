@@ -113,7 +113,14 @@ background:$stripes;
 			}
 
 			.submitform{
-				padding:2vw;
+				padding:0vw;
+				padding-top:0.5vw;
+				padding-bottom:0.5vw;
+
+				#stripes{
+					padding-top:1vw;
+					background:$stripes;
+				}
 				
 
 				.label{
@@ -127,16 +134,23 @@ background:$stripes;
 				}
 
 				.formcontainer{
-					background:$stripes;
+				
 			
 					margin:0 auto;
-					width:100%;
+					width:90%;
 				}
 			}
 
 			.checkfield{
 				margin-top:2%;
-				margin-left:5%;
+				margin-left:1%;
+			}
+
+			#privacypolicy{
+				text-decoration: underline;
+				font-weight:bold;
+				color:$light-blue;
+				display:block;
 			}
 
 			
